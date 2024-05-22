@@ -1,0 +1,49 @@
+/** index.css **/
+body {
+  background-color: black;
+  /* background-image: url("./assets/images/backgrounds/deepSpace02a.jpg"); */
+  background-size: cover;
+  color: white;
+}
+
+h2 {
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+}
+
+.bigTitle {
+  font-size: min(3rem, 7vw);
+  margin-bottom: 2rem;
+}
+
+.bigLogoImg {
+  aspect-ratio: 1/1;
+  height: min(200px, 30vw);
+}
+
+.middle {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.titleDate {
+  font-size: min(0.9rem, 3.5vw);
+  margin-top: 3rem;
+}
+
+/* detect phone in landscape */
+@media screen and (any-pointer: coarse) and (orientation: landscape)
+    and (max-width: 900px) {
+    .bigTitle { font-size: 2.5rem; margin-bottom: 0rem; }
+    .bigLogoImg { height: 128px; }
+    .titleDate { margin-top: 1rem; }
+  }
+}

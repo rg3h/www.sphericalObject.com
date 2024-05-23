@@ -23,24 +23,45 @@
   <link rel="stylesheet"       href="./assets/fonts/monaSans/monaSans.css"/>
   <link rel="stylesheet"       href="./modules/util/reset.css"/>
   <link rel="stylesheet"       href="./modules/default/default.css"/>
+  <script type="module"        src="./modules/default/default.js"></script>
   <style>
+    :root {
+      --horse: "\1F40E";
+      --yarn:  "\1F9F6";
+    }
+
     body {
       align-items: center;
       background: black;
       color: white;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      flex-wrap: wrap;
       font-family: var(--fontFamilyExtraLight);
       font-size: 2rem;
       gap: 1rem;
       justify-content: center;
     }
-    .horse:before { content: "\1F40E"; font-size: 42px; }
-    .yarn:before { content: "\1F9F6"; font-size: 24px; }
+
+    .horse:before { content: var(--horse); font-size:4rem; }
+    .yarn:before  { content: var(--yarn); font-size: 1.5rem; }
+    .titleDate    { font-size: 0.9rem; }
+
+
+    /* detect narrow */
+    @media screen and (max-width: 600px) {
+      body          { font-size: 1.5rem; }
+      .horse:before { font-size: 4rem; }
+      .yarn:before  { font-size: 1rem; }
+    }
+
   </style>
 </head>
 <body>
-  Something terrible has happened. <span class="yarn"/><span class="horse"/>
-
+  Something terrible has happened.
+  <div>
+    <span class="yarn"></span> <span class="horse"></span>
+  </div>
+  <div class="titleDate"></div>
 </body>
 </html>

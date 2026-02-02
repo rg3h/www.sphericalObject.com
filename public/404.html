@@ -1,1 +1,68 @@
-<meta http-equiv="refresh" content="0; url=https://www.sphericalObject.com/src/error.html">
+<!DOCTYPE html> <!-- 404.html -->
+<html lang="en">
+<head>
+<!--   =*##*=
+   =#%##%%%%%%%#
+  #%##**###%%%%%@+
+ #%##****###%%%%@@=
+=%%##***####%%%%@@%  www.sphericalObject.com
+=%%%%#####%%%%%@@@%
+ #%%%%%%%%%%%%@@@@=
+  #@%%%%%%%%@@@@@+
+   =%@@@@@@@@@%*
+       =+**+= -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>sphericalObject error 404</title>
+  <meta name="description" content="sphericalObject error 404"/>
+  <meta name="mobile-web-app-capable"       content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="msapplication-tap-highlight"  content="no"  />
+  <link rel="apple-touch-icon" href="./assets/images/logo/logo256.png"/>
+  <link rel="icon"             href="./assets/images/logo/logo256.png"/>
+  <link rel="stylesheet"       href="./assets/fonts/monaSans/monaSans.css"/>
+  <link rel="stylesheet"       href="./modules/util/reset.css"/>
+  <link rel="stylesheet"       href="./modules/default/default.css"/>
+  <script type="module"        src="./modules/default/default.js"></script>
+  <style>
+    :root {
+      --horse: "\1F40E";
+      --yarn:  "\1F9F6";
+      --redCircle: "\1F534";
+      --blueCircle: "\1F535";
+    }
+
+    body {
+      align-items: center;
+      background: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-family: var(--fontFamilyExtraLight);
+      font-size: 2rem;
+      justify-content: center;
+    }
+
+    .horse:before { content: var(--horse); font-size:8rem; }
+    .ball:before  { content: var(--redCircle); font-size: 2rem; }
+    .titleDate    { font-size: 0.9rem; }
+
+
+    /* detect narrow */
+    @media screen and (max-width: 600px) {
+      body          { font-size: 1.5rem; }
+      .horse:before { font-size: 4rem; }
+      .ball:before  { font-size: 1rem; }
+    }
+
+  </style>
+</head>
+<body>
+  Something terrible has happened.
+  <div>
+    <span class="ball"></span><span class="horse"></span>
+  </div>
+  <div class="titleDate"></div>
+</body>
+</html>

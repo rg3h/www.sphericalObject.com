@@ -1,4 +1,5 @@
-<!--   =*##*=
+<!--
+       =*##*=
    =#%##%%%%%%%#
   #%##**###%%%%%@+
  #%##****###%%%%@@=
@@ -7,7 +8,8 @@
  #%%%%%%%%%%%%@@@@=
   #@%%%%%%%%@@@@@+
    =%@@@@@@@@@%*
-       =+**+= -->
+       =+**+=
+-->
 <img src="./public/assets/images/logo/logo256.png" height="128" align="left" valign="top"
   alt="www.sphericalObject.com" />
 <br>
